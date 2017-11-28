@@ -15,9 +15,18 @@ class ViewController: UIViewController {
         
         let pieUIView = PieUIView(frame: CGRect(x: 40, y: 150, width: 300, height: 300))
         
-        pieUIView.addSegment(segment: Segment(size: 50, fillColor: UIColor.lightGray.cgColor, textColor: UIColor.white.cgColor))
-        pieUIView.addSegment(segment: Segment(size: 25, fillColor: UIColor.red.cgColor, textColor: UIColor.white.cgColor))
-        pieUIView.addSegment(segment: Segment(size: 25, fillColor: UIColor.green.cgColor, textColor: UIColor.white.cgColor))
+        pieUIView.clockwise = false
+        pieUIView.addSegment(segment: Segment(size: 10, fillColor: UIColor.green, textColor: UIColor.black))
+        pieUIView.addSegment(segment: Segment(size: 10, fillColor: UIColor.blue, textColor: UIColor.white))
+        pieUIView.addSegment(segment: Segment(size: 10, fillColor: UIColor.green, textColor: UIColor.black))
+        pieUIView.addSegment(segment: Segment(size: 10, fillColor: UIColor.blue, textColor: UIColor.white))
+        pieUIView.addSegment(segment: Segment(size: 10, fillColor: UIColor.green, textColor: UIColor.black))
+        pieUIView.addSegment(segment: Segment(size: 10, fillColor: UIColor.blue, textColor: UIColor.white))
+        pieUIView.addSegment(segment: Segment(size: 10, fillColor: UIColor.green, textColor: UIColor.black))
+        pieUIView.addSegment(segment: Segment(size: 10, fillColor: UIColor.blue, textColor: UIColor.white))
+        pieUIView.addSegment(segment: Segment(size: 10, fillColor: UIColor.green, textColor: UIColor.black))
+        pieUIView.addSegment(segment: Segment(size: 10, fillColor: UIColor.blue, textColor: UIColor.white))
+        
         
         self.view.addSubview(pieUIView)
     }
