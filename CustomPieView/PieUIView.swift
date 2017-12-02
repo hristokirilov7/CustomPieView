@@ -93,12 +93,14 @@ public class PieUIView : UIView {
     }
     
     private func addSize(center: CGPoint, segment: Segment) {
-        let sizeTextView = UITextView(frame: CGRect(x: center.x - width / 2, y: center.y - width / 2.5, width: width, height: width))
+        let sizeTextView = UITextView()
         
         sizeTextView.text = segment.size.description
         sizeTextView.font = UIFont.boldSystemFont(ofSize: 13)
         sizeTextView.textColor = segment.textColor
         sizeTextView.backgroundColor = UIColor.clear
+        sizeTextView.sizeToFit()
+        sizeTextView.center = center
         
         self.addSubview(sizeTextView)
     }
